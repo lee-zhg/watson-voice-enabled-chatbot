@@ -48,8 +48,6 @@ def init_skill(assistant_client):
         'workspaces']
 
     env_workspace_id = os.environ.get('WORKSPACE_ID')
-    #print("env_workspace_id=" + str(env_workspace_id))
-
     if env_workspace_id:
         # Optionally, we have an env var to give us a WORKSPACE_ID.
         # If one was set in the env, require that it can be found.
