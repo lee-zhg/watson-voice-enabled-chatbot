@@ -181,17 +181,16 @@ File `.env` is used to store connection information of Watson services in the sa
 1. Update the `API key` and `URL` for each serviice. If you did not record their value in the previous sections, go back to the sections and retrieve values.
 
     ```
-    # Watson Speech to Text
-    SPEECH_TO_TEXT_APIKEY=
-    SPEECH_TO_TEXT_URL=
+    SPEECH_TO_TEXT_APIKEY=<add_speech-to-text_apikey>
+    SPEECH_TO_TEXT_URL=<add_speech-to-text_url>
 
     # Watson Text to Speech
-    TEXT_TO_SPEECH_APIKEY=
-    TEXT_TO_SPEECH_URL=
+    TEXT_TO_SPEECH_APIKEY=<add_text-to-speech_apikey>
+    TEXT_TO_SPEECH_URL=<add_text-to-speech_url>
 
     # Watson Assistant
-    ASSISTANT_APIKEY=
-    ASSISTANT_URL=
+    ASSISTANT_APIKEY=<add_assistant_apikey>
+    ASSISTANT_URL=<add_assistant_url>
     ```
 
 1. Change the line below
@@ -206,6 +205,13 @@ File `.env` is used to store connection information of Watson services in the sa
     WORKSPACE_NAME=watson-burger-voice
     ```
 
+1. Update `SPEECH_TO_TEXT_MODEL` and `SPEECH_TO_TEXT_LANGUAGE_CUSTOMIZATION_ID` if you customized your `Watson Speech to Text` model. A customized `Watson Speech to Text` model can improve the accuracy when audio is converted to text for a specific domain. For example, a custom model can catch the term `McFlurry` more accurately.
+
+    ```
+    SPEECH_TO_TEXT_MODEL=<add_model>
+    SPEECH_TO_TEXT_LANGUAGE_CUSTOMIZATION_ID=<add_language-customization-id>
+    ```
+
 1. Below is a sample `.env` file.
 
     ```bash
@@ -215,6 +221,8 @@ File `.env` is used to store connection information of Watson services in the sa
     # Watson Speech to Text
     SPEECH_TO_TEXT_APIKEY=W0UsAxM5-me6Xbm2p9GPSjzL3NLLDVUGrI-jyUSDdw
     SPEECH_TO_TEXT_URL=https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/ba8aae8-3bc9-4da4-9b3f-eb18d018de
+    SPEECH_TO_TEXT_MODEL=en-US_BroadbandModel
+    SPEECH_TO_TEXT_LANGUAGE_CUSTOMIZATION_ID=ecdf5106-38c2-4103-afa6-c07f95a5f89a
 
     # Watson Text to Speech
     TEXT_TO_SPEECH_APIKEY=LfC_4SIUtBKQvE6zUCdbiv0bzBeOckjWjMoUndZ_B
@@ -284,7 +292,9 @@ Below are couple of sample orders that should work out of the box. The sample ap
 
 1. Start the sample application.
 
-1. The voice-enabled chatbot speaks welcome greeting.
+1. The voice-enabled chatbot speaks welcome greeting. 
+
+    >Note: You may experience a few seconds of delay before the voice-enabled chatbot speaks to you each time.
 
 1. Click the microphone to start audio input. The microphone icon locates at the bottom-right corner of the browser.
 
@@ -302,6 +312,8 @@ Below are couple of sample orders that should work out of the box. The sample ap
 
 1. The voice-enabled chatbot speaks welcome greeting.
 
+    >Note: You may experience a few seconds of delay before the voice-enabled chatbot speaks to you each time.
+
 1. Click the microphone to start audio input.
 
 1. Make the order by speaking `one big mac please`.
@@ -317,6 +329,8 @@ Below are couple of sample orders that should work out of the box. The sample ap
 1. Start the sample application.
 
 1. The voice-enabled chatbot speaks welcome greeting.
+
+    >Note: You may experience a few seconds of delay before the voice-enabled chatbot speaks to you each time.
 
 1. Click the microphone to start audio input. The microphone icon locates at the bottom-right corner of the browser.
 
