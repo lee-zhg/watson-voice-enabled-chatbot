@@ -286,7 +286,7 @@ Below are couple of sample orders that should work out of the box. The sample ap
 
 1. The voice-enabled chatbot speaks welcome greeting.
 
-1. Click the microphone to start audio input.
+1. Click the microphone to start audio input. The microphone icon locates at the bottom-right corner of the browser.
 
 1. Make the order by speaking `one big mac to go`.
 
@@ -306,7 +306,7 @@ Below are couple of sample orders that should work out of the box. The sample ap
 
 1. Make the order by speaking `one big mac please`.
 
-1. Click the microphone to stop audio input.
+1. Click the microphone to stop audio input. The microphone icon locates at the bottom-right corner of the browser.
 
 1. Because dining location information to order a burger was not provided, the voice-enabled chatbot prompts you for the information.
 
@@ -318,7 +318,7 @@ Below are couple of sample orders that should work out of the box. The sample ap
 
 1. The voice-enabled chatbot speaks welcome greeting.
 
-1. Click the microphone to start audio input.
+1. Click the microphone to start audio input. The microphone icon locates at the bottom-right corner of the browser.
 
 1. Make the order by speaking `I like to order a small McFlurry with cooky`.
 
