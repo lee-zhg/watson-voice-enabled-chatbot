@@ -212,6 +212,10 @@ File `.env` is used to store connection information of Watson services in the sa
     SPEECH_TO_TEXT_LANGUAGE_CUSTOMIZATION_ID=<add_language-customization-id>
     ```
 
+    >**Note**: Please refer to [Creating Custom Model of Watson Speech to Text](https://github.com/lee-zhg/watson-speech2text-custom-model.git) if you need to build a `custom lnaguage model` for `Watsonm Speech to text` service.
+
+    >**Note**: If you participated a hackathon and need `custom lnaguage model` for `Watsonm Speech to text` service, talk to any IBM mentor to check if an existing `custom lnaguage model` is available.
+
 1. Below is a sample `.env` file.
 
     ```bash
